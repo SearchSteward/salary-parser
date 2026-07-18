@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "steward-salary-parser"
+version = "1.0.0"
+description = "Extract real salaries from job-posting text without fabricating them. Context-gated, cadence-aware, dependency-free."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["salary", "compensation", "job-postings", "parsing", "scraping"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing",
+]
+
+[project.urls]
+Homepage = "https://github.com/searchsteward/salary-parser"
+"Built by" = "https://searchsteward.com"
+
+[tool.setuptools]
+py-modules = ["salary_parser"]
