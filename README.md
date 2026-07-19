@@ -1,5 +1,7 @@
 # salary-parser
 
+[![tests](https://github.com/searchsteward/salary-parser/actions/workflows/tests.yml/badge.svg)](https://github.com/searchsteward/salary-parser/actions/workflows/tests.yml) [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **Extract real salaries from job-posting text — without fabricating them.**
 
 The salary extractor from [SearchSteward](https://searchsteward.com)'s ingest
@@ -25,8 +27,11 @@ postings. The core invariant:
 ## Install
 
 ```bash
-pip install steward-salary-parser   # or just vendor salary_parser.py — it's one file
+# One file, stdlib only — vendor it:
+curl -O https://raw.githubusercontent.com/searchsteward/salary-parser/main/salary_parser.py
 ```
+
+A PyPI package (`steward-salary-parser`) is planned; the file above is the same code.
 
 ## Usage
 
